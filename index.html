@@ -13,11 +13,11 @@
       color-scheme: light;
       --ink: #111425;
       --ink-soft: #3f465d;
-      --muted: #565e73;
+      --muted: #34394a;
       --paper: #f6f7fb;
       --surface: #ffffff;
       --line: rgba(17, 20, 37, 0.11);
-      --violet: #6240d9;
+      --violet: #3b238c;
       --cyan: #2ecfe5;
       --magenta: #c85bff;
       --shadow: 0 24px 80px rgba(28, 31, 54, 0.13);
@@ -540,6 +540,25 @@
       box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.96);
     }
 
+
+    /* WCAG 2.2 AAA enhanced contrast overrides for secondary text. */
+    .contact-label,
+    .education-list span,
+    .role-meta,
+    .role-date,
+    .venture-card .venture-meta,
+    .accessibility-footer,
+    .accessibility-footer p,
+    .accessibility-footer strong {
+      color: #34394a;
+    }
+
+    .role-title span,
+    .section-heading::before,
+    .role-card li::marker {
+      color: #3b238c;
+    }
+
     @media (max-width: 900px) {
       .hero {
         grid-template-columns: 1fr;
@@ -798,24 +817,6 @@
     @media(max-width:900px){.contact-strip{padding:18px 34px 20px}.contact-strip .contact-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:620px){.resume-banner{aspect-ratio:16/5}.contact-strip{padding:18px 22px 20px}.contact-strip .contact-list{grid-template-columns:1fr}}
     @media print{.resume-banner{width:100%;aspect-ratio:4/1}.contact-strip{padding:10px 24px 12px}.contact-strip .contact-list{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 12px}}
-
-  
-
-    /* Enhanced-contrast text overrides: WCAG 2.2 AAA contrast targets */
-    .contact-label,
-    .education-list span,
-    .role-meta,
-    .role-date,
-    .venture-card .venture-meta,
-    .accessibility-footer,
-    .accessibility-footer p,
-    .accessibility-footer p strong {
-      color: #303647;
-    }
-
-    .role-title span {
-      color: #3d237d;
-    }
 
   </style>
 
