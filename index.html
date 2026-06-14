@@ -436,61 +436,15 @@
       color: var(--muted);
       background: #f7f8fc;
       font-size: 0.82rem;
+      text-align: center;
     }
 
     .accessibility-footer p {
       margin: 0;
     }
 
-
     .wcag-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.3rem;
-      margin-top: 0.45rem;
-      color: #285943;
-      font-size: 0.72rem;
-      font-weight: 700;
-      line-height: 1.35;
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 0.16em;
-    }
-
-    .wcag-badge svg {
-      width: 0.85rem;
-      height: 0.85rem;
-      flex: 0 0 auto;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .wcag-badge:hover {
-      color: #163a2a;
-      text-decoration-thickness: 2px;
-    }
-
-    .wcag-badge:focus-visible {
-      outline: 3px solid #7657ff;
-      outline-offset: 3px;
-    }
-
-    .wcag-badge svg {
-      width: 1rem;
-      height: 1rem;
-      flex: 0 0 auto;
-      fill: none;
-      stroke: currentColor;
-      stroke-width: 2.2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .wcag-badge__detail {
-      font-weight: 700;
+      margin-top: 10px;
     }
 
     .toolbar {
@@ -1102,13 +1056,7 @@
 
       <footer class="accessibility-footer">
         <p><strong>Accessibility:</strong> This single-page résumé is designed to meet WCAG 2.2 Level AA and Australian Government web accessibility expectations.</p>
-        <a class="wcag-badge" href="https://www.accessibilitychecker.org/audit/?website=zackabrah.github.io&amp;flag=au#" aria-label="View the WCAG 2.2 accessibility audit for zackabrah.github.io">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <circle cx="12" cy="12" r="9"></circle>
-            <path d="m8.5 12 2.2 2.2 4.8-5"></path>
-          </svg>
-          <span>Accessibility audit</span>
-        </a>
+        <img class="wcag-badge" src="https://achecker.ca/api/v1/scan/a08bf03e-3903-4827-89f7-c3ac69388ae4/badge" alt="WCAG Checked" />
       </footer>
     </article>
   </main>
