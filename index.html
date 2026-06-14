@@ -799,6 +799,24 @@
     @media(max-width:620px){.resume-banner{aspect-ratio:16/5}.contact-strip{padding:18px 22px 20px}.contact-strip .contact-list{grid-template-columns:1fr}}
     @media print{.resume-banner{width:100%;aspect-ratio:4/1}.contact-strip{padding:10px 24px 12px}.contact-strip .contact-list{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 12px}}
 
+  
+
+    /* Enhanced-contrast text overrides: WCAG 2.2 AAA contrast targets */
+    .contact-label,
+    .education-list span,
+    .role-meta,
+    .role-date,
+    .venture-card .venture-meta,
+    .accessibility-footer,
+    .accessibility-footer p,
+    .accessibility-footer p strong {
+      color: #303647;
+    }
+
+    .role-title span {
+      color: #3d237d;
+    }
+
   </style>
 
   <script type="application/ld+json">
@@ -847,8 +865,8 @@
         <address class="contact-strip" role="group" aria-labelledby="contact-heading">
           <ul class="contact-list">
             <li><span class="contact-label">Email</span><a href="mailto:hello@zackon.top" aria-label="Email Isaac Johnson at hello@zackon.top">hello@zackon.top</a></li>
-            <li><span class="contact-label">GitHub</span><a href="https://github.com/zackabrah">github.com/zackabrah</a></li>
-            <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/isaac-johnson-427285364">linkedin.com/in/isaac-johnson</a></li>
+            <li><span class="contact-label">GitHub</span><a href="https://github.com/zackabrah" aria-label="Isaac Johnson on GitHub">github.com/zackabrah</a></li>
+            <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/isaac-johnson-427285364" aria-label="Isaac Johnson on LinkedIn">linkedin.com/in/isaac-johnson</a></li>
             <li><span class="contact-label">Location</span>Coffs Harbour, NSW, Australia</li>
           </ul>
         </address>
@@ -1095,9 +1113,9 @@
   </main>
 
   <nav class="toolbar" aria-label="Résumé actions">
-    <button class="print-button" type="button" onclick="window.print()">
+    <button class="print-button" type="button" onclick="window.print()" aria-label="Print this résumé or save it as a PDF">
       <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"></path>
+        <path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z">
       </svg>
       Print / save PDF
     </button>
@@ -1105,4 +1123,3 @@
 
 </body>
 </html>
-
